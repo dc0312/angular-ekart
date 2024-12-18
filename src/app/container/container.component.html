@@ -14,5 +14,24 @@
     <app-search (searchTextChangeEvent)="onSearchText($event)"></app-search>
     <product-list [searchTextPL]="searchTextC" #productListComponent></product-list>
     <product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListComponentEl"></product-detail>
+    
+    <div class="ekart-featured-products">
+        <div class="ekart-featured-product-heading">
+            <h3 class="title">Latest Arrival In Popular Brands</h3>
+        </div>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Nike</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Adidas</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Reebok</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        
+    </div>
 
 </div>
